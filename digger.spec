@@ -2,10 +2,11 @@ Summary:	The Unix version of the old classic game Digger
 Summary(pl):	Uniksowa wersja klasycznej gry Digger
 Name:		digger
 Version:	20020314
-Release:	1
+Release:	2
 License:	(C) Windmill Software 1983
 Group:		Applications/Games/Arcade
 Source0:	http://www.digger.org/%{name}-%{version}.tar.gz
+Source1:	%{name}.desktop
 NoSource:	0
 Patch0:		%{name}-optflags.patch
 Patch1:		%{name}-fix_gcc_3.patch
@@ -48,7 +49,11 @@ mo¿liwo¶ci takich jak:
 %install
 rm -rf $RPM_BUILD_ROOT
 
+install -d $RPM_BUILD_ROOT%{_desktopdir}
+install %{SOURCE1} $RPM_BUILD_ROOT%{_desktopdir}/%{name}.desktop
+
 install -D %{name} $RPM_BUILD_ROOT%{_bindir}/%{name}
+
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -57,3 +62,4 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc %{name}.txt
 %attr(755,root,root) %{_bindir}/%{name}
+%{_desktopdir}/%{name}.desktop
