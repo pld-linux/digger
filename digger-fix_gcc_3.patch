@@ -1,0 +1,10 @@
+--- alpha.c~	2000-04-03 22:42:48.000000000 +0200
++++ alpha.c	2003-07-21 15:54:58.000000000 +0200
+@@ -1,6 +1,6 @@
+ #include "def.h"
+ 
+-char copyright[]="Portions Copyright(c) 1983 Windmill Software
++char copyright[]="Portions Copyright(c) 1983 Windmill Software\
+ Inc.";
+ 
+ Sint textoffdat[16]={

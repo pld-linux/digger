@@ -1,0 +1,10 @@
+--- Makefile.sdl~	2000-04-07 09:04:52.000000000 +0200
++++ Makefile.sdl	2002-11-12 02:38:54.000000000 +0100
+@@ -1,5 +1,6 @@
+ CC	?= gcc
+-CFLAGS	+= -O -g -pipe -Wall -D_SDL
++OPTFLAGS = -O -g -pipe -Wall
++CFLAGS	+= $(OPTFLAGS) -D_SDL
+ OBJS	= main.o digger.o drawing.o sprite.o scores.o record.o sound.o \
+ 			newsnd.o ini.o input.o monster.o bags.o alpha.o vgagrafx.o \
+ 			title_gz.o icon.o sdl_kbd.o sdl_vid.o sdl_timer.o sdl_snd.o
