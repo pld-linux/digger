@@ -3,15 +3,15 @@ Summary(pl):	Uniksowa wersja klasycznej gry digger
 Name:		digger
 Version:	20020314
 Release:	1
+License:	(C) Windmill Software 1983
+Group:		Applications/Games/Arcade
 Source0:	http://www.digger.org/%{name}-%{version}.tar.gz
+NoSource:	0
 Patch0:		%{name}-optflags.patch
 Patch1:		%{name}-fix_gcc_3.patch
-License:	© Windmill Software 1983
-Group:		Applications/Games/Arcade
-URL:		http://www.digger.org
+URL:		http://www.digger.org/
 BuildRequires:	SDL-devel
 BuildRequires:	zlib-devel
-NoSource:	0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -26,14 +26,14 @@ new features including:
 - Two player simultaneous mode
 
 %description -l pl
-Uniksowa wersja starej klasycznej gry Digger. Posiada wiele nowych mo¿liwo¶ci
-takich jak:
+Uniksowa wersja starej klasycznej gry Digger. Posiada wiele nowych
+mo¿liwo¶ci takich jak:
 - Przycisk Exit
 - Opcjonalna grafika VGA
 - Nagrywanie i odtwarzanie sesji
 - Kontrola prêdko¶ci w czasie rzeczywistym
 - Przedefiniowanie klawiatury
-- ???
+- Tryb "gauntlet"
 - Tryb dwóch graczy
 
 %prep
@@ -43,10 +43,11 @@ takich jak:
 
 %build
 %{__make} -f Makefile.sdl \
-	OPTFLAGS="$RPM_OPT_FLAGS"
+	OPTFLAGS="%{rpmcflags}"
 
 %install
 rm -rf $RPM_BUILD_ROOT
+
 install -D %{name} $RPM_BUILD_ROOT%{_bindir}/%{name}
 
 %clean
