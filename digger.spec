@@ -2,7 +2,7 @@ Summary:	The Unix version of the old classic game Digger
 Summary(pl):	Uniksowa wersja klasycznej gry Digger
 Name:		digger
 Version:	20020314
-Release:	2
+Release:	3
 License:	(C) Windmill Software 1983
 Group:		Applications/Games/Arcade
 Source0:	http://www.digger.org/%{name}-%{version}.tar.gz
