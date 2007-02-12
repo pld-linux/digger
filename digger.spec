@@ -1,5 +1,5 @@
 Summary:	The Unix version of the old classic game Digger
-Summary(pl):	Uniksowa wersja klasycznej gry Digger
+Summary(pl.UTF-8):   Uniksowa wersja klasycznej gry Digger
 Name:		digger
 Version:	20020314
 Release:	3
@@ -26,16 +26,16 @@ new features including:
 - Gauntlet mode
 - Two player simultaneous mode
 
-%description -l pl
+%description -l pl.UTF-8
 Uniksowa wersja starej klasycznej gry Digger. Posiada wiele nowych
-moøliwo∂ci takich jak:
-- Przycisk wyj∂cia
+mo≈ºliwo≈õci takich jak:
+- Przycisk wyj≈õcia
 - Opcjonalna grafika VGA
 - Nagrywanie i odtwarzanie sesji
-- Kontrola prÍdko∂ci w czasie rzeczywistym
+- Kontrola prƒôdko≈õci w czasie rzeczywistym
 - Przedefiniowanie klawiatury
-- Tryb PrÛby
-- Tryb dwÛch graczy
+- Tryb Pr√≥by
+- Tryb dw√≥ch graczy
 
 %prep
 %setup -q
