@@ -1,5 +1,5 @@
 Summary:	The Unix version of the old classic game Digger
-Summary(pl.UTF-8):   Uniksowa wersja klasycznej gry Digger
+Summary(pl.UTF-8):	Uniksowa wersja klasycznej gry Digger
 Name:		digger
 Version:	20020314
 Release:	3
